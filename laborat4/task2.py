@@ -1,16 +1,16 @@
 import math as m
 
-def raxyemo(a, b, c, d):
+def raxyemo(x, a, b, c):
     x1 = a**2
     x2 = m.log(abs(b))
     x3 = m.sin(c) * m.sqrt(abs(d))
     result = x1 + x2 - x3
     return result
 
-a = float(input("Введіть x: "))
-b = float(input("Введіть a: "))
-c = float(input("Введіть b: "))
-d = float(input("Введіть c: "))
+x = float(input("Введіть x: "))
+a = float(input("Введіть a: "))
+b = float(input("Введіть b: "))
+c = float(input("Введіть c: "))
 
-result = raxyemo(a, b, c, d)
+result = raxyemo(x, a, b, c)
 print("result=", result)
